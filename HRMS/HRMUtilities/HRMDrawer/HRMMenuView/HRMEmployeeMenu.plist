@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Home</string>
+		<key>image</key>
+		<string>HomeMenu</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Timesheet</string>
+		<key>image</key>
+		<string>TimesheetMenu</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Leave Application</string>
+		<key>image</key>
+		<string>LeaveApplicationMenu</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Reimbursement</string>
+		<key>image</key>
+		<string>ReimbursementMenu</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Payslip</string>
+		<key>image</key>
+		<string>Payslip</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Notification</string>
+		<key>image</key>
+		<string>NotificationMenu</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Settings</string>
+		<key>image</key>
+		<string>SettingsMenu</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Logout</string>
+		<key>image</key>
+		<string>Logout</string>
+	</dict>
+</array>
+</plist>

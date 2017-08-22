@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ufonts.com_futurabt-book-opentype.ttf">
+            <string>FuturaBT-Book</string>
+            <string>FuturaBT-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HRMPicker">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="201"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4B4-HV-xcj">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIf-dE-GLz">
+                            <rect key="frame" x="247" y="4" width="64" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="TIu-YM-81K"/>
+                                <constraint firstAttribute="width" constant="64" id="rvm-eR-8ZR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="FuturaBT-Book" family="Futura Book" pointSize="17"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="DoneButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="t8x-O2-a0S"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="July 17, 2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlR-zn-xTF">
+                            <rect key="frame" x="13" y="4" width="227" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="227" id="lbN-Cu-2HG"/>
+                                <constraint firstAttribute="height" constant="26" id="r4Z-qO-6dM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="FuturaBT-Book" family="Futura Book" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.15686274510000001" green="0.47843137250000001" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="eIf-dE-GLz" firstAttribute="top" secondItem="4B4-HV-xcj" secondAttribute="top" constant="4" id="51V-SQ-nyP"/>
+                        <constraint firstItem="QlR-zn-xTF" firstAttribute="top" secondItem="4B4-HV-xcj" secondAttribute="top" constant="4" id="JCT-i1-HR8"/>
+                        <constraint firstAttribute="trailing" secondItem="eIf-dE-GLz" secondAttribute="trailing" constant="9" id="Ltn-Dd-fN3"/>
+                        <constraint firstItem="QlR-zn-xTF" firstAttribute="leading" secondItem="4B4-HV-xcj" secondAttribute="leading" constant="13" id="Ov7-h7-uJ3"/>
+                        <constraint firstAttribute="height" constant="39" id="k0E-MW-USd"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="39" id="u4L-Ip-ISv"/>
+                    </constraints>
+                </view>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Su9-63-Zio">
+                    <rect key="frame" x="0.0" y="39" width="320" height="162"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="gJh-jd-AoV"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="osW-rM-V11"/>
+                    </connections>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Su9-63-Zio" secondAttribute="trailing" id="1uX-rA-1Rq"/>
+                <constraint firstItem="Su9-63-Zio" firstAttribute="top" secondItem="4B4-HV-xcj" secondAttribute="bottom" id="4sX-g9-4kS"/>
+                <constraint firstAttribute="trailing" secondItem="4B4-HV-xcj" secondAttribute="trailing" id="NML-qf-hol"/>
+                <constraint firstItem="Su9-63-Zio" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NuD-xc-hnQ"/>
+                <constraint firstItem="4B4-HV-xcj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UiK-kh-1uj"/>
+                <constraint firstAttribute="bottom" secondItem="Su9-63-Zio" secondAttribute="bottom" id="ncu-us-aBV"/>
+                <constraint firstItem="4B4-HV-xcj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="x4r-i7-9j4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="picker" destination="Su9-63-Zio" id="mVn-NY-AAq"/>
+                <outlet property="pickerSelectedLabel" destination="QlR-zn-xTF" id="foa-D0-Aqz"/>
+            </connections>
+            <point key="canvasLocation" x="252" y="207.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>ic_settings_bg_n</string>
+	<string>ic_timesheet_n</string>
+	<string>ic_new_employee_payslip_n</string>
+	<string>ic_reimbursement_n</string>
+	<string>ic_leave_application_bg_n</string>
+</array>
+</plist>

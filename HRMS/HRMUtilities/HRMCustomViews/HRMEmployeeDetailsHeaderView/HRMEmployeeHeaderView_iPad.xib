@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ufonts.com_futurabt-book-opentype.ttf">
+            <string>FuturaBT-Book</string>
+            <string>FuturaBT-Book</string>
+            <string>FuturaBT-Book</string>
+            <string>FuturaBT-Book</string>
+            <string>FuturaBT-Book</string>
+            <string>FuturaBT-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6qy-PO-mqv" customClass="HRMEmployeeHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="413"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3AT-ZF-VHK">
+                    <rect key="frame" x="-29" y="0.0" width="826" height="413"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="3AT-ZF-VHK" secondAttribute="height" multiplier="4:2" id="0tp-vR-JV5"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMj-Dh-MPI">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="413"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileImageBg" translatesAutoresizingMaskIntoConstraints="NO" id="8C7-MP-vvI">
+                            <rect key="frame" x="301" y="32" width="167" height="167"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="167" id="9pA-du-e5a"/>
+                                <constraint firstAttribute="width" constant="167" id="OJ7-Qh-SGv"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Richard Liar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJT-gX-L77">
+                            <rect key="frame" x="99" y="210" width="571" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="571" id="Cce-3W-PN0"/>
+                                <constraint firstAttribute="height" constant="36" id="Ghl-Ln-hLu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="FuturaBT-Book" family="Futura Book" pointSize="31"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D54321AD (Sr. Web Designer)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhm-hc-Zg6">
+                            <rect key="frame" x="127" y="248" width="514" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="igf-OA-erG"/>
+                                <constraint firstAttribute="width" constant="514" id="jRq-fW-74O"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="FuturaBT-Book" family="Futura Book" pointSize="21"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employe id:D54321AD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CW6-yi-gbs">
+                            <rect key="frame" x="137" y="258" width="514" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="514" id="5cf-0x-b1u"/>
+                                <constraint firstAttribute="height" constant="32" id="6J5-K2-E32"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="FuturaBT-Book" family="Futura Book" pointSize="21"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Design Depatment (Sr. Web Designer)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4I-i4-Yyj">
+                            <rect key="frame" x="68" y="303" width="632" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="2Yx-ch-xSB"/>
+                                <constraint firstAttribute="width" constant="632" id="mdc-sj-oM1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="FuturaBT-Book" family="Futura Book" pointSize="21"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UxY-2w-alb">
+                            <rect key="frame" x="217" y="350" width="335" height="38"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JoinDate" translatesAutoresizingMaskIntoConstraints="NO" id="SXs-RE-e7f">
+                                    <rect key="frame" x="41" y="0.0" width="48" height="43"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="48" id="0Lw-CH-7L1"/>
+                                        <constraint firstAttribute="height" constant="43" id="wLp-Gf-LbG"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APRIL 17, 2014" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uu5-E7-lpd">
+                                    <rect key="frame" x="102" y="5" width="225" height="33"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="225" id="8l4-eS-Za0"/>
+                                        <constraint firstAttribute="height" constant="33" id="NHo-ld-faN"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="FuturaBT-Book" family="Futura Book" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="335" id="08e-LY-10b"/>
+                                <constraint firstItem="uu5-E7-lpd" firstAttribute="top" secondItem="UxY-2w-alb" secondAttribute="top" constant="5" id="J1D-AZ-mbM"/>
+                                <constraint firstItem="SXs-RE-e7f" firstAttribute="top" secondItem="UxY-2w-alb" secondAttribute="top" id="VYW-UF-ZBh"/>
+                                <constraint firstItem="uu5-E7-lpd" firstAttribute="leading" secondItem="SXs-RE-e7f" secondAttribute="trailing" constant="13" id="boa-D5-xpW"/>
+                                <constraint firstAttribute="height" constant="38" id="iVB-is-Blg"/>
+                                <constraint firstAttribute="trailing" secondItem="uu5-E7-lpd" secondAttribute="trailing" constant="8" id="lCx-hq-SOq"/>
+                                <constraint firstItem="SXs-RE-e7f" firstAttribute="leading" secondItem="UxY-2w-alb" secondAttribute="leading" constant="41" id="zib-aR-Qo6"/>
+                            </constraints>
+                        </view>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nX-lH-PIg">
+                            <rect key="frame" x="127" y="298" width="514" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="514" id="4aR-aF-JR5"/>
+                                <constraint firstAttribute="height" constant="32" id="DBP-tW-IUE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="FuturaBT-Book" family="Futura Book" pointSize="21"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="xfc-ti-5DW">
+                            <rect key="frame" x="374" y="106" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Kct-ib-emB"/>
+                                <constraint firstAttribute="width" constant="20" id="jDD-fn-9NC"/>
+                            </constraints>
+                            <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="IJT-gX-L77" firstAttribute="leading" secondItem="VMj-Dh-MPI" secondAttribute="leading" constant="99" id="1dz-pq-yvv"/>
+                        <constraint firstAttribute="trailing" secondItem="CW6-yi-gbs" secondAttribute="trailing" constant="117" id="24J-Mx-aya"/>
+                        <constraint firstAttribute="trailing" secondItem="IJT-gX-L77" secondAttribute="trailing" constant="98" id="4Sf-fe-hmc"/>
+                        <constraint firstAttribute="trailing" secondItem="4nX-lH-PIg" secondAttribute="trailing" constant="127" id="8RC-dn-tLO"/>
+                        <constraint firstItem="UxY-2w-alb" firstAttribute="leading" secondItem="VMj-Dh-MPI" secondAttribute="leading" constant="217" id="Ba0-ee-bXK"/>
+                        <constraint firstItem="4nX-lH-PIg" firstAttribute="top" secondItem="CW6-yi-gbs" secondAttribute="bottom" constant="8" id="CAR-ha-tlu"/>
+                        <constraint firstItem="xfc-ti-5DW" firstAttribute="centerX" secondItem="VMj-Dh-MPI" secondAttribute="centerX" id="CL2-b9-WUa"/>
+                        <constraint firstItem="IJT-gX-L77" firstAttribute="top" secondItem="8C7-MP-vvI" secondAttribute="bottom" constant="11" id="Dxi-QZ-YK3"/>
+                        <constraint firstItem="8C7-MP-vvI" firstAttribute="top" secondItem="VMj-Dh-MPI" secondAttribute="top" constant="32" id="F93-jr-SzJ"/>
+                        <constraint firstItem="IJT-gX-L77" firstAttribute="top" secondItem="xfc-ti-5DW" secondAttribute="bottom" constant="84" id="HN4-ZY-tNK"/>
+                        <constraint firstItem="uhm-hc-Zg6" firstAttribute="leading" secondItem="VMj-Dh-MPI" secondAttribute="leading" constant="127" id="I1V-rs-wLa"/>
+                        <constraint firstAttribute="trailing" secondItem="G4I-i4-Yyj" secondAttribute="trailing" constant="68" id="MKs-sb-c8N"/>
+                        <constraint firstAttribute="width" constant="768" id="MwG-yo-Evi"/>
+                        <constraint firstItem="UxY-2w-alb" firstAttribute="top" secondItem="G4I-i4-Yyj" secondAttribute="bottom" constant="15" id="N8o-cJ-nPk"/>
+                        <constraint firstItem="uhm-hc-Zg6" firstAttribute="top" secondItem="IJT-gX-L77" secondAttribute="bottom" constant="2" id="PFv-jc-EX1"/>
+                        <constraint firstItem="G4I-i4-Yyj" firstAttribute="leading" secondItem="VMj-Dh-MPI" secondAttribute="leading" constant="68" id="Uch-CT-zr5"/>
+                        <constraint firstAttribute="trailing" secondItem="UxY-2w-alb" secondAttribute="trailing" constant="216" id="XrO-ny-30r"/>
+                        <constraint firstItem="4nX-lH-PIg" firstAttribute="leading" secondItem="VMj-Dh-MPI" secondAttribute="leading" constant="127" id="b2i-dJ-4vc"/>
+                        <constraint firstAttribute="height" constant="413" id="cuO-bU-PmN"/>
+                        <constraint firstItem="CW6-yi-gbs" firstAttribute="top" secondItem="IJT-gX-L77" secondAttribute="bottom" constant="12" id="g8q-60-uzY"/>
+                        <constraint firstItem="8C7-MP-vvI" firstAttribute="centerX" secondItem="VMj-Dh-MPI" secondAttribute="centerX" id="hsU-be-tFM"/>
+                        <constraint firstItem="G4I-i4-Yyj" firstAttribute="top" secondItem="CW6-yi-gbs" secondAttribute="bottom" constant="13" id="jlq-jt-yjf"/>
+                        <constraint firstItem="CW6-yi-gbs" firstAttribute="leading" secondItem="VMj-Dh-MPI" secondAttribute="leading" constant="137" id="vz3-Tu-cYi"/>
+                        <constraint firstAttribute="trailing" secondItem="uhm-hc-Zg6" secondAttribute="trailing" constant="127" id="z0s-yy-x2o"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VMj-Dh-MPI" firstAttribute="centerY" secondItem="6qy-PO-mqv" secondAttribute="centerY" id="Soo-Wi-tCa"/>
+                <constraint firstItem="3AT-ZF-VHK" firstAttribute="centerY" secondItem="6qy-PO-mqv" secondAttribute="centerY" id="ZYK-vP-hNQ"/>
+                <constraint firstAttribute="bottom" secondItem="3AT-ZF-VHK" secondAttribute="bottom" id="cVa-rb-ysd"/>
+                <constraint firstItem="VMj-Dh-MPI" firstAttribute="centerX" secondItem="6qy-PO-mqv" secondAttribute="centerX" id="jr7-LJ-teM"/>
+                <constraint firstItem="3AT-ZF-VHK" firstAttribute="centerX" secondItem="6qy-PO-mqv" secondAttribute="centerX" id="pdM-tZ-25G"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="activityIndicator" destination="xfc-ti-5DW" id="EQx-kL-XAe"/>
+                <outlet property="imagBG" destination="3AT-ZF-VHK" id="HsW-OB-mjP"/>
+                <outlet property="imgEmply" destination="8C7-MP-vvI" id="efa-Dd-FDH"/>
+                <outlet property="lblDesigner" destination="4nX-lH-PIg" id="qdn-l9-df7"/>
+                <outlet property="lblEmpDepatment" destination="G4I-i4-Yyj" id="L7a-0G-qev"/>
+                <outlet property="lblEmpID" destination="CW6-yi-gbs" id="7sI-aK-aAT"/>
+                <outlet property="lblEmpIDWithDepatment" destination="uhm-hc-Zg6" id="eWg-FR-VjX"/>
+                <outlet property="lblEmplyname" destination="IJT-gX-L77" id="E0c-FJ-FYr"/>
+                <outlet property="viewDate" destination="UxY-2w-alb" id="EGx-fp-nF1"/>
+                <outlet property="viewEmpDate" destination="uu5-E7-lpd" id="YaE-AT-YXq"/>
+            </connections>
+            <point key="canvasLocation" x="124" y="405.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="JoinDate" width="38" height="36"/>
+        <image name="ProfileImageBg" width="167" height="167"/>
+    </resources>
+</document>

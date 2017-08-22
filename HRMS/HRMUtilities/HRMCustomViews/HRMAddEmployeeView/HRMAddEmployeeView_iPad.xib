@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ufonts.com_futurabt-book-opentype.ttf">
+            <string>FuturaBT-Book</string>
+            <string>FuturaBT-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.84999999999999987" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="84"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.89999999999999991" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFP-gJ-TT2">
+                    <rect key="frame" x="0.0" y="0.0" width="382" height="84"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="FuturaBT-Book" family="Futura Book" pointSize="31"/>
+                    <state key="normal" title="Add Employee">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" alpha="0.89999999999999991" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ve-ZZ-vWW">
+                    <rect key="frame" x="387" y="0.0" width="381" height="84"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="FuturaBT-Book" family="Futura Book" pointSize="31"/>
+                    <state key="normal" title="Add Interview">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vFP-gJ-TT2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9j4-op-1jm"/>
+                <constraint firstItem="7Ve-ZZ-vWW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="F2l-Ue-qf7"/>
+                <constraint firstAttribute="trailing" secondItem="7Ve-ZZ-vWW" secondAttribute="trailing" id="Fq2-lW-OuI"/>
+                <constraint firstItem="7Ve-ZZ-vWW" firstAttribute="leading" secondItem="vFP-gJ-TT2" secondAttribute="trailing" constant="5" id="Jdb-g0-Zg8"/>
+                <constraint firstAttribute="bottom" secondItem="7Ve-ZZ-vWW" secondAttribute="bottom" id="TNA-nl-L7N"/>
+                <constraint firstItem="7Ve-ZZ-vWW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cvd-wW-bA9"/>
+                <constraint firstItem="vFP-gJ-TT2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dfc-4f-G6x"/>
+                <constraint firstItem="vFP-gJ-TT2" firstAttribute="width" secondItem="7Ve-ZZ-vWW" secondAttribute="width" constant="1" id="f4w-qf-TQf"/>
+                <constraint firstAttribute="bottom" secondItem="vFP-gJ-TT2" secondAttribute="bottom" id="khf-h4-lVT"/>
+                <constraint firstAttribute="bottom" secondItem="7Ve-ZZ-vWW" secondAttribute="bottom" id="p7Y-G0-NFa"/>
+                <constraint firstItem="vFP-gJ-TT2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sBj-JB-SiH"/>
+                <constraint firstAttribute="bottom" secondItem="vFP-gJ-TT2" secondAttribute="bottom" id="sFZ-46-mNr"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="289" y="289"/>
+        </view>
+    </objects>
+</document>

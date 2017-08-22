@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ufonts.com_futurabt-book-opentype.ttf">
+            <string>FuturaBT-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HRMMenuItemViewCell" rowHeight="50" id="WBs-Q3-mCI" customClass="HRMMenuItemViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WBs-Q3-mCI" id="0ou-7A-gps">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="232-9f-W97">
+                        <rect key="frame" x="12" y="15" width="23" height="18"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23" id="1ns-8p-hWT"/>
+                            <constraint firstAttribute="height" constant="18" id="8to-VP-dH2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCb-kg-u5r">
+                        <rect key="frame" x="51" y="14" width="235" height="21"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="fG0-Uv-jwW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="FuturaBT-Book" family="Futura Book" pointSize="15"/>
+                        <color key="textColor" red="0.20784313725490194" green="0.3529411764705882" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="il2-Sr-1bg">
+                        <rect key="frame" x="0.0" y="48" width="320" height="1"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="vHg-1k-kkI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" red="0.87450980392156863" green="0.89411764705882346" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="NCb-kg-u5r" secondAttribute="centerY" id="7Ev-Ag-Oax"/>
+                    <constraint firstItem="il2-Sr-1bg" firstAttribute="leading" secondItem="0ou-7A-gps" secondAttribute="leading" id="Fx9-U1-29a"/>
+                    <constraint firstItem="232-9f-W97" firstAttribute="leading" secondItem="0ou-7A-gps" secondAttribute="leading" constant="12" id="IOb-SY-5Op"/>
+                    <constraint firstAttribute="bottom" secondItem="il2-Sr-1bg" secondAttribute="bottom" id="Qde-md-udc"/>
+                    <constraint firstItem="NCb-kg-u5r" firstAttribute="leading" secondItem="232-9f-W97" secondAttribute="trailing" constant="16" id="S6L-tr-aqm"/>
+                    <constraint firstAttribute="centerY" secondItem="232-9f-W97" secondAttribute="centerY" id="Vch-Ig-Zgh"/>
+                    <constraint firstAttribute="trailing" secondItem="NCb-kg-u5r" secondAttribute="trailing" constant="34" id="aUj-Tz-MDw"/>
+                    <constraint firstAttribute="trailing" secondItem="il2-Sr-1bg" secondAttribute="trailing" id="e6h-gM-Wkd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="imageLogo" destination="232-9f-W97" id="FdB-L1-YLg"/>
+                <outlet property="labelTitle" destination="NCb-kg-u5r" id="6jM-B6-9gi"/>
+            </connections>
+            <point key="canvasLocation" x="193" y="196"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

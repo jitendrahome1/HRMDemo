@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ufonts.com_futurabt-book-opentype.ttf">
+            <string>FuturaBT-Book</string>
+            <string>FuturaBT-Book</string>
+            <string>FuturaBT-Book</string>
+            <string>FuturaBT-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qkn-8M-WsQ" customClass="HRMAppraisalPinView">
+            <rect key="frame" x="0.0" y="0.0" width="278" height="165"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97J-Sb-W5v" customClass="PasscodeView">
+                    <rect key="frame" x="73" y="79" width="132" height="17"/>
+                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="132" id="2Ln-3x-iRr"/>
+                        <constraint firstAttribute="height" constant="17" id="Uiv-rU-3W8"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="length">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="size">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pfE-ua-3d6">
+                    <rect key="frame" x="181" y="16" width="97" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="97" id="bRq-su-p10"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad"/>
+                    <connections>
+                        <outlet property="delegate" destination="qkn-8M-WsQ" id="Tps-dL-QZm"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter PIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAW-Xu-J2T">
+                    <rect key="frame" x="8" y="49" width="262" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="G7R-Se-sf9"/>
+                        <constraint firstAttribute="width" constant="262" id="rS8-6h-ODv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="FuturaBT-Book" family="Futura Book" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0E3-Es-4Xe">
+                    <rect key="frame" x="0.0" y="114" width="278" height="1"/>
+                    <color key="backgroundColor" red="0.3919032261" green="0.063453926650000006" blue="0.95692899210000004" alpha="0.23440270390000001" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="u6h-Hi-d97"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hp-Pa-s2c">
+                    <rect key="frame" x="0.0" y="115" width="135" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="7GM-fH-WTf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="FuturaBT-Book" family="Futura Book" pointSize="17"/>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="actionCancel:" destination="qkn-8M-WsQ" eventType="touchUpInside" id="uT8-SV-r7a"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9U-Vx-QW9">
+                    <rect key="frame" x="138" y="114" width="1" height="51"/>
+                    <color key="backgroundColor" red="0.3919032261" green="0.063453926650000006" blue="0.95692899210000004" alpha="0.23440270390000001" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="GwQ-z0-VOR"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tM-Uf-1Il">
+                    <rect key="frame" x="143" y="115" width="135" height="50"/>
+                    <fontDescription key="fontDescription" name="FuturaBT-Book" family="Futura Book" pointSize="17"/>
+                    <state key="normal" title="OK"/>
+                    <connections>
+                        <action selector="actionOk:" destination="qkn-8M-WsQ" eventType="touchUpInside" id="P00-rr-f3s"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PaySlip PIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Id-JK-ySd">
+                    <rect key="frame" x="8" y="16" width="262" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="5Fq-o5-A1p"/>
+                        <constraint firstAttribute="width" constant="262" id="z6s-wg-FFj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="FuturaBT-Book" family="Futura Book" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.84705882349999995" green="0.90196078430000004" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="h9U-Vx-QW9" firstAttribute="top" secondItem="0E3-Es-4Xe" secondAttribute="top" id="0jv-ND-P9M"/>
+                <constraint firstAttribute="bottom" secondItem="2Hp-Pa-s2c" secondAttribute="bottom" id="0th-7z-QI9"/>
+                <constraint firstAttribute="bottom" secondItem="h9U-Vx-QW9" secondAttribute="bottom" id="5nA-WS-ROS"/>
+                <constraint firstItem="nAW-Xu-J2T" firstAttribute="leading" secondItem="qkn-8M-WsQ" secondAttribute="leading" constant="8" id="BHe-n0-Zco"/>
+                <constraint firstItem="7tM-Uf-1Il" firstAttribute="height" secondItem="2Hp-Pa-s2c" secondAttribute="height" id="DAe-mi-AQ1"/>
+                <constraint firstItem="97J-Sb-W5v" firstAttribute="leading" secondItem="qkn-8M-WsQ" secondAttribute="leading" constant="94" id="L6D-Se-0qR"/>
+                <constraint firstItem="4Id-JK-ySd" firstAttribute="top" secondItem="qkn-8M-WsQ" secondAttribute="top" constant="16" id="Lt6-Ct-osC"/>
+                <constraint firstItem="7tM-Uf-1Il" firstAttribute="width" secondItem="2Hp-Pa-s2c" secondAttribute="width" id="MJ6-OJ-Kff"/>
+                <constraint firstAttribute="trailing" secondItem="4Id-JK-ySd" secondAttribute="trailing" constant="-3" id="Qse-Z0-ovl"/>
+                <constraint firstItem="pfE-ua-3d6" firstAttribute="top" secondItem="4Id-JK-ySd" secondAttribute="top" id="Sk2-Gf-sKy"/>
+                <constraint firstAttribute="bottom" secondItem="7tM-Uf-1Il" secondAttribute="bottom" id="TmX-9U-RFf"/>
+                <constraint firstItem="0E3-Es-4Xe" firstAttribute="leading" secondItem="qkn-8M-WsQ" secondAttribute="leading" id="WHs-oc-bNW"/>
+                <constraint firstItem="7tM-Uf-1Il" firstAttribute="top" secondItem="0E3-Es-4Xe" secondAttribute="bottom" id="XAt-jM-WrY"/>
+                <constraint firstItem="97J-Sb-W5v" firstAttribute="top" secondItem="nAW-Xu-J2T" secondAttribute="bottom" constant="8" id="axK-nJ-FBU"/>
+                <constraint firstAttribute="trailing" secondItem="97J-Sb-W5v" secondAttribute="trailing" constant="94" id="bNo-4t-i1y"/>
+                <constraint firstAttribute="trailing" secondItem="pfE-ua-3d6" secondAttribute="trailing" id="bwg-oc-7bw"/>
+                <constraint firstItem="h9U-Vx-QW9" firstAttribute="leading" secondItem="2Hp-Pa-s2c" secondAttribute="trailing" constant="3" id="dPg-D2-9NW"/>
+                <constraint firstItem="0E3-Es-4Xe" firstAttribute="top" secondItem="97J-Sb-W5v" secondAttribute="bottom" constant="18" id="fG5-PZ-8Lk"/>
+                <constraint firstItem="4Id-JK-ySd" firstAttribute="centerX" secondItem="97J-Sb-W5v" secondAttribute="centerX" id="ga9-p3-iUA"/>
+                <constraint firstItem="4Id-JK-ySd" firstAttribute="leading" secondItem="nAW-Xu-J2T" secondAttribute="leading" id="jDk-nR-Sz8"/>
+                <constraint firstAttribute="trailing" secondItem="nAW-Xu-J2T" secondAttribute="trailing" constant="8" id="lYk-kt-X08"/>
+                <constraint firstAttribute="trailing" secondItem="7tM-Uf-1Il" secondAttribute="trailing" id="lZF-LU-Hla"/>
+                <constraint firstItem="7tM-Uf-1Il" firstAttribute="leading" secondItem="h9U-Vx-QW9" secondAttribute="trailing" constant="4" id="nNa-6H-2Q7"/>
+                <constraint firstItem="nAW-Xu-J2T" firstAttribute="top" secondItem="4Id-JK-ySd" secondAttribute="bottom" constant="11" id="o0m-K8-ncZ"/>
+                <constraint firstItem="2Hp-Pa-s2c" firstAttribute="top" secondItem="0E3-Es-4Xe" secondAttribute="bottom" id="u5e-0a-CQk"/>
+                <constraint firstItem="7tM-Uf-1Il" firstAttribute="top" secondItem="0E3-Es-4Xe" secondAttribute="bottom" id="ufw-kY-UaW"/>
+                <constraint firstItem="4Id-JK-ySd" firstAttribute="leading" secondItem="qkn-8M-WsQ" secondAttribute="leading" constant="-23" id="wAi-IW-k2h"/>
+                <constraint firstItem="2Hp-Pa-s2c" firstAttribute="leading" secondItem="qkn-8M-WsQ" secondAttribute="leading" id="wpj-Zi-CSB"/>
+                <constraint firstAttribute="trailing" secondItem="0E3-Es-4Xe" secondAttribute="trailing" id="xjd-JT-b8d"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="wAi-IW-k2h"/>
+                    <exclude reference="Qse-Z0-ovl"/>
+                    <exclude reference="BHe-n0-Zco"/>
+                    <exclude reference="L6D-Se-0qR"/>
+                    <exclude reference="bNo-4t-i1y"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="passcodeView" destination="97J-Sb-W5v" id="K5d-0R-3hU"/>
+                <outlet property="textField" destination="pfE-ua-3d6" id="WHi-Cq-gCL"/>
+            </connections>
+            <point key="canvasLocation" x="80" y="109.5"/>
+        </view>
+    </objects>
+</document>

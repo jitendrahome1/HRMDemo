@@ -1,0 +1,54 @@
+//
+//  HRMPrefixHeader.pch
+//  HRMS
+//
+//  Created by Priyam Dutta on 29/09/15.
+//  Copyright (c) 2015 Indus Net Technologies. All rights reserved.
+//
+
+#ifndef HRMS_HRMPrefixHeader_pch
+#define HRMS_HRMPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef Debug
+
+#define DebugLog(args...) NSLog(args)
+#define LogCmd() NSLog(@"%@ %@", self, NSStringFromSelector(_cmd))
+
+#else
+
+#define DebugLog(args...) // Do nothing
+#define LogCmd() // Do nothing
+
+#endif
+
+#endif
+
+#pragma mark - Categories
+
+#import "NSDate+Extra.h"
+#import "UIAlertView+Block.h"
+#import "NSArray+Extras.h"
+#import "NSString+Extra.h"
+#import "CALayer+UIColor.h"
+
+#pragma mark - Others
+
+#import "HRMManager.h"
+#import "HRMAPIHandler.h"
+#import "HRMToast.h"
+#import "AFNetworking.h"
+#import "HRMAppDelegate.h"
+#import "HRMHelper.h"
+#import "HRMConstants.h"
+#import "HRMNavDrawer.h"
+#import "UIImageView+UIActivityIndicatorForSDWebImage.h"
+#import "HRMNavigationalHelper.h"
+#import "HRMHelper.h"
+#import "HRMAppText.h"
+#import "HRMGlobals.h"
+#import "JTMaterialSpinner.h"
+#import "MarqueeLabel.h"
+
